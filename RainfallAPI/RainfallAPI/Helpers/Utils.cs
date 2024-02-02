@@ -42,15 +42,5 @@ namespace RainfallAPI.Helpers
             }
             return rainfallReadingResponse;
         }
-
-        //private  getJTokenValue(JToken item) 
-        //{
-        //    var jTokenProperties = item.Children().OfType<JProperty>();
-        //    foreach (JProperty property in jTokenProperties)
-        //    {
-        //        var key = property.Name;
-        //        var value = property.Value;
-        //    }
-        //}
     }
 }

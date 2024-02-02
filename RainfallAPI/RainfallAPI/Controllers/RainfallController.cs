@@ -13,27 +13,22 @@ namespace RainfallAPI.Controllers
     [Route("[controller]")]
     public class RainfallController : ControllerBase
     {
-        
-        private readonly ILogger<RainfallController> _logger;
         private readonly HttpClient _client;
+        string uri = "https://environment.data.gov.uk/flood-monitoring/id/stations/{0}/readings";
 
-        //public RainfallController(ILogger<RainfallController> logger)
-        //{
-        //    _logger = logger;
-        //}
         public RainfallController()
         {
             _client = new HttpClient();
         }
 
-
         [HttpGet(Name = "get-rainfall")]
         [HttpGet("{stationId}")]
-        //[Route("/rainfall/id/{stationId}")]
+        [ProducesResponseType(typeof(rainfallReadingResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public rainfallReadingResponse GetReadings(int stationId)
         {
             rainfallReadingResponse _rainfallReadingResponse = new rainfallReadingResponse();
-            string uri = "https://environment.data.gov.uk/flood-monitoring/id/stations/{0}/readings";
+
             _client.BaseAddress = new Uri(string.Format(uri, stationId));
             
             var response = Utils.ConsumeAPI(_client);

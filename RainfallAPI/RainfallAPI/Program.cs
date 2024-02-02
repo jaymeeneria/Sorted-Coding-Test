@@ -42,9 +42,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-//app.MapControllerRoute(
-//    name: "get-rainfall",
-//    pattern: "{controller=Rainfall}/{action=id}/{stationId}?}/readings");
+
 app.MapControllers();
 
 app.Run();

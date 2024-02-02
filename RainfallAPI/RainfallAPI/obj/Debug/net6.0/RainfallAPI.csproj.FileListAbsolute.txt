@@ -31,3 +31,6 @@ E:\Projects\Sorted Coding Test\RainfallAPI\RainfallAPI\obj\Debug\net6.0\Rainfall
 E:\Projects\Sorted Coding Test\RainfallAPI\RainfallAPI\obj\Debug\net6.0\RainfallAPI.genruntimeconfig.cache
 E:\Projects\Sorted Coding Test\RainfallAPI\RainfallAPI\obj\Debug\net6.0\ref\RainfallAPI.dll
 E:\Projects\Sorted Coding Test\RainfallAPI\RainfallAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Projects\Sorted Coding Test\RainfallAPI\RainfallAPI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+E:\Projects\Sorted Coding Test\RainfallAPI\RainfallAPI\bin\Debug\net6.0\System.Web.Http.dll
+E:\Projects\Sorted Coding Test\RainfallAPI\RainfallAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
